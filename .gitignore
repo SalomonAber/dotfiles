@@ -6,3 +6,11 @@
 !.zlogin
 !.zshenv
 !.zshrc
+!.config
+.config/*
+!.config/redshift
+.config/redshift/*
+!.config/redshift/redshift.conf
+!.config/mpd
+.config/mpd/*
+!.config/mpd/mpd.conf
