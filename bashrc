@@ -31,3 +31,5 @@ fi
 
 alias ls='ls --color=auto'
 PS1='[\u \W]\$ '
+
+eval $(keychain --eval --quiet --noask --nogui --agents ssh,gpg id_ed25519)
