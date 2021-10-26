@@ -32,4 +32,6 @@ fi
 alias ls='ls --color=auto'
 PS1='[\u \W]\$ '
 
-eval $(keychain --eval --quiet --noask --nogui --agents ssh,gpg id_ed25519)
+eval $(keychain --eval --quiet --noask --nogui --gpg2 --agents ssh,gpg id_ed25519)
+
+GPG_TTY=$(tty)
