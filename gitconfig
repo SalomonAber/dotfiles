@@ -4,3 +4,5 @@
 	signingkey = 4D34AE6E9C7D42F4
 [gpg]
 	program = gpg2
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
