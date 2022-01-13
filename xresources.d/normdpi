@@ -1,4 +1,4 @@
 ! Sym-link to .Xresources
-#include .xresources.d/colors
+#include ".xresources.d/colors"
 ft.dpi: 95
 violet.fractionalDpi: 0.95
