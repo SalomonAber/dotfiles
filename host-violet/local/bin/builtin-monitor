@@ -1,0 +1,3 @@
+#!/bin/bash
+ln -sf ~/.xresources.d/hidpi ~/.Xresources
+xrandr --output eDP-1 --primary

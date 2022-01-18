@@ -1,0 +1,3 @@
+#!/bin/bash
+ln -sf ~/.xresources.d/normdpi ~/.Xresources
+xrandr --output DP-3-2-8 --right-of DP-4-1 --output eDP-1 --off
