@@ -1,19 +1,21 @@
 {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "todo-tree.general.tags": [
-        "BUG",
-        "FIXME",
-        "TODO",
-        "NEXT"
-    ],
-    "todo-tree.highlights.customHighlight": {
-        "NEXT": {
-            "type": "tag",
-            "foreground": "white",
-            "background": "rgba(0, 120, 212, 1)",
-            "gutterIcon": true,
-            "icon": "arrow-right",
-            "iconColour": "rgba(0, 120, 212, 1)",
-        }
-    },
+  // Editor
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // Todo Tree
+  "todo-tree.general.tags": ["BUG", "FIXME", "TODO", "NEXT"],
+  "todo-tree.highlights.customHighlight": {
+    "NEXT": {
+      "type": "tag",
+      "foreground": "white",
+      "background": "rgba(0, 120, 212, 1)",
+      "gutterIcon": true,
+      "icon": "arrow-right",
+      "iconColour": "rgba(0, 120, 212, 1)"
+    }
+  },
+  // Go
+  "go.testFlags": ["-v"],
+  // Git
+  "git.enableCommitSigning": true
 }
