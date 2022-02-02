@@ -15,7 +15,16 @@
     }
   },
   // Go
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
   "go.testFlags": ["-v"],
+  "go.toolsManagement.autoUpdate": true,
+  // Python
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "python.formatting.provider": "black",
   // Git
   "git.enableCommitSigning": true
 }
