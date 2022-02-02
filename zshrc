@@ -22,6 +22,9 @@ setopt autocd
 unsetopt beep
 bindkey -v
 # End of lines configured by zsh-newuser-install
-
+bindkey "^?" backward-delete-char
 alias ls='ls --color=auto'
+alias l="tree --dirsfirst -CFL 1"
+alias ll="tree --dirsfirst -CFL 2"
+alias lll="tree --dirsfirst -CFL 3"
 PS1='%n %1~ %# '
