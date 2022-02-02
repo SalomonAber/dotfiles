@@ -4,4 +4,5 @@ export GPG_TTY=$(tty)
 
 eval $(dircolors ~/.dircolors)
 
-PATH="$HOME/.local/bin:$PATH"
+GOPATH=~/go
+PATH="$GOPATH/bin:$HOME/.local/bin:$PATH"
