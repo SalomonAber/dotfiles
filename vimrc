@@ -1,3 +1,15 @@
+call plug#begin()
+
+Plug 'editorconfig/editorconfig-vim'
+Plug 'chriskempson/base16-vim'
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
+Plug 'w0rp/ale'
+
+call plug#end()
+
+" Set colorscheme
+colorscheme base16-default-dark
+
 " Skip man-page message
 :nnoremap K K<CR>
 :vnoremap K K<CR>
@@ -11,11 +23,25 @@ nnoremap gr gd[{V%::s/<C-R>///gc<left><left><left>
 " Global replace variable
 nnoremap gR gD:%s/<C-R>///gc<left><left><left>
 
-call plug#begin()
+" Prettier format code
+nmap <Leader>p <Plug>(Prettier)
 
-Plug 'editorconfig/editorconfig-vim'
-Plug 'chriskempson/base16-vim'
+" Add line numbers
+set number
 
-call plug#end()
+" Run eslint for js
+let g:ale_fixers = {
+   \ 'javascript': ['eslint']
+ \ }
 
-colorscheme base16-default-dark
+" Fix linting issues on save
+let g:ale_fix_on_save = 1
+
+" Always show gutter
+let g:ale_sign_column_always = 1
+
+" Set Spell(Bad|Cap) colors
+let &t_Cs = "\e[4:3m"
+let &t_Ce = "\e[4:0m"
+hi SpellBad guisp=red gui=undercurl guifg=NONE guibg=NONE ctermfg=NONE ctermbg=NONE term=underline cterm=undercurl ctermul=red
+hi SpellCap guisp=yellow gui=undercurl guifg=NONE guibg=NONE ctermfg=NONE ctermbg=NONE term=underline cterm=undercurl ctermul=yellow
