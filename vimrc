@@ -7,6 +7,15 @@ Plug 'w0rp/ale'
 
 call plug#end()
 
+" Wean myself off the arrow keys
+noremap <Up> <nop>
+noremap <Down> <nop>
+noremap <Left> <nop>
+noremap <Right> <nop>
+
+" Drastic escape key mapping
+inoremap jj <Esc>
+
 " Set colorscheme
 colorscheme base16-default-dark
 
