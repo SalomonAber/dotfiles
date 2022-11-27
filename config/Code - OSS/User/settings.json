@@ -3,16 +3,24 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "workbench.colorTheme": "GitHub Dark Default",
+  "window.titleBarStyle": "custom",
+  "workbench.editorAssociations": {
+    "*.Dat": "hexEditor.hexedit",
+    "*.pdf": "latex-workshop-pdf-hook"
+  },
+  // Explorer
+  "explorer.confirmDragAndDrop": false,
+  "security.workspace.trust.untrustedFiles": "open",
   // Todo Tree
   "todo-tree.general.tags": ["BUG", "FIXME", "TODO", "NEXT"],
   "todo-tree.highlights.customHighlight": {
     "NEXT": {
       "type": "tag",
-      "foreground": "white",
-      "background": "rgba(0, 120, 212, 1)",
+      "foreground": "#fff",
+      "background": "#0078d4",
       "gutterIcon": true,
       "icon": "arrow-right",
-      "iconColour": "rgba(0, 120, 212, 1)"
+      "iconColour": "#0078d4"
     }
   },
   // Go
@@ -26,17 +34,56 @@
     "editor.defaultFormatter": "ms-python.python"
   },
   "python.formatting.provider": "black",
+  // XML
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "redhat.telemetry.enabled": false,
+  // SVG
+  "[svg]": {
+    "editor.defaultFormatter": "jock.svg",
+    "editor.formatOnSave": false
+  },
+  "svg.preview.mode": "svg",
+  // HTML
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // Jinja
+  "emmet.includeLanguages": { "jinja-html": "html" },
+  "[jinja-html]": {
+    "editor.defaultFormatter": "monosans.djlint"
+  },
+  // Svelte
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "svelte.ask-to-enable-ts-plugin": false,
+  // Markdown
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "markdown.extension.tableFormatter.enabled": false,
   // Git
   "git.enableCommitSigning": true,
   "git.autofetch": true,
+  "git.confirmSync": false,
+  // Hex
+  "hexeditor.columnWidth": 20,
+  "hexeditor.showDecodedText": true,
+  "hexeditor.defaultEndianness": "little",
+  "hexeditor.inspectorType": "aside",
+  // C
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
   // C++
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
-  "window.titleBarStyle": "custom",
   // Latex
   "latex-workshop.view.pdf.viewer": "tab",
-  "workbench.editorAssociations": {
-    "*.pdf": "latex-workshop-pdf-hook"
-  }
+  // Spellcheck
+  "cSpell.language": "en-GB",
+  "cSpell.enabled": false
 }
