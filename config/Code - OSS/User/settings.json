@@ -2,6 +2,7 @@
   // Editor
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.colorTheme": "GitHub Dark Default",
   // Todo Tree
   "todo-tree.general.tags": ["BUG", "FIXME", "TODO", "NEXT"],
   "todo-tree.highlights.customHighlight": {
@@ -26,5 +27,16 @@
   },
   "python.formatting.provider": "black",
   // Git
-  "git.enableCommitSigning": true
+  "git.enableCommitSigning": true,
+  "git.autofetch": true,
+  // C++
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "window.titleBarStyle": "custom",
+  // Latex
+  "latex-workshop.view.pdf.viewer": "tab",
+  "workbench.editorAssociations": {
+    "*.pdf": "latex-workshop-pdf-hook"
+  }
 }
