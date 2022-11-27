@@ -4,6 +4,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'chriskempson/base16-vim'
 Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 Plug 'w0rp/ale'
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
 call plug#end()
 
@@ -54,3 +55,7 @@ let &t_Cs = "\e[4:3m"
 let &t_Ce = "\e[4:0m"
 hi SpellBad guisp=red gui=undercurl guifg=NONE guibg=NONE ctermfg=NONE ctermbg=NONE term=underline cterm=undercurl ctermul=red
 hi SpellCap guisp=yellow gui=undercurl guifg=NONE guibg=NONE ctermfg=NONE ctermbg=NONE term=underline cterm=undercurl ctermul=yellow
+
+" Search current directory for vimrc
+set exrc
+set secure
