@@ -32,6 +32,17 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
+if [ -f ~/.config/monitorlayout ] ; then
+  monitorlayout=$(<~/.config/monitorlayout)
+  case $monitorlayout in
+    builtin)
+      xrandr --output eDP-1 --primary
+      ;;
+    dual)
+      xrandr --output DP-3-1-8 --right-of DP-3-3 --output eDP-1 --off
+      ;;
+  esac
+fi
 slstatus &
 csum=""
 new_csum=$(sha1sum $(which dwm))
