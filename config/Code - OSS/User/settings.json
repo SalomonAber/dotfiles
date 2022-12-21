@@ -47,7 +47,7 @@
   "svg.preview.mode": "svg",
   // HTML
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.html-language-features"
   },
   // Jinja
   "emmet.includeLanguages": { "jinja-html": "html" },
@@ -86,4 +86,8 @@
   // Spellcheck
   "cSpell.language": "en-GB",
   "cSpell.enabled": false
+  // Latex
+  "workbench.editorAssociations": {
+    "*.pdf": "latex-workshop-pdf-hook"
+  }
 }
